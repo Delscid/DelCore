@@ -18,9 +18,9 @@ namespace DelCore.CommandLine.Abstract
         #region Properties
 
         /// <summary>
-        ///     Gets a <see cref="ICollection{T}" /> containing the arguments defined in the <see cref="IArgumentContainer" />.
+        ///     Gets a <see cref="ICollection{T}" /> containing the arguments defined in this <see cref="IArgumentContainer" />.
         /// </summary>
-        /// <returns>A <see cref="ICollection{ICommandLineArgument}" /> containing the arguments defined in the <see cref="IArgumentContainer" />.</returns>
+        /// <returns>A <see cref="ICollection{ICommandLineArgument}" /> containing the arguments defined in this <see cref="IArgumentContainer" />.</returns>
         ICollection<ICommandLineArgument> Arguments { get; }
 
         #endregion
@@ -28,26 +28,26 @@ namespace DelCore.CommandLine.Abstract
         #region Methods
 
         /// <summary>
-        ///     Defines a new argument in the <see cref="IArgumentContainer" />.
+        ///     Defines a new <see cref="ICommandLineArgument" /> in this <see cref="IArgumentContainer" />.
         /// </summary>
-        /// <param name="name">The name of the argument being defined.</param>
-        /// <param name="type">The type of the argument being defined.</param>
-        /// <param name="required">A value indicating whether the argument is required.</param>
-        /// <param name="repeatable">A value indicating whether the argument can be used multiple times.</param>
-        /// <param name="configure">A callback used to configure the argument before it is added to the <see cref="IArgumentContainer"/>.</param>
-        /// <returns>The new <see cref="ICommandLineArgument" /> instance defined in the <see cref="IArgumentContainer" />.</returns>
+        /// <param name="name">The name of the <see cref="ICommandLineArgument" /> being defined.</param>
+        /// <param name="type">The type of the <see cref="ICommandLineArgument" /> being defined.</param>
+        /// <param name="required">A value indicating whether the <see cref="ICommandLineArgument" /> is required.</param>
+        /// <param name="repeatable">A value indicating whether the <see cref="ICommandLineArgument" /> can be used multiple times.</param>
+        /// <param name="configure">A callback used to configure the <see cref="ICommandLineArgument" /> before it is added to the <see cref="IArgumentContainer"/>.</param>
+        /// <returns>The new <see cref="ICommandLineArgument" /> instance defined in this <see cref="IArgumentContainer" />.</returns>
         ICommandLineArgument AddArgument(string name, ArgumentType type, bool required = true, bool repeatable = false, Action<ICommandLineArgument> configure = null);
 
         /// <summary>
-        ///     Defines a new argument in the <see cref="IArgumentContainer" />.
+        ///     Defines a new <see cref="ICommandLineArgument" /> in this <see cref="IArgumentContainer" />.
         /// </summary>
-        /// <param name="name">The name of the argument being defined.</param>
-        /// <param name="description">A description of the argument being defined.</param>
-        /// <param name="type">The type of the argument being defined.</param>
-        /// <param name="required">A value indicating whether the argument is required.</param>
-        /// <param name="repeatable">A value indicating whether the argument can be used multiple times.</param>
-        /// <param name="configure">A callback used to configure the argument before it is added to the <see cref="IArgumentContainer"/>.</param>
-        /// <returns>The new <see cref="ICommandLineArgument" /> instance defined in the <see cref="IArgumentContainer" />.</returns>
+        /// <param name="name">The name of the <see cref="ICommandLineArgument" /> being defined.</param>
+        /// <param name="description">A description of the <see cref="ICommandLineArgument" /> being defined.</param>
+        /// <param name="type">The type of the <see cref="ICommandLineArgument" /> being defined.</param>
+        /// <param name="required">A value indicating whether the <see cref="ICommandLineArgument" /> is required.</param>
+        /// <param name="repeatable">A value indicating whether the <see cref="ICommandLineArgument" /> can be used multiple times.</param>
+        /// <param name="configure">A callback used to configure the <see cref="ICommandLineArgument" /> before it is added to the <see cref="IArgumentContainer"/>.</param>
+        /// <returns>The new <see cref="ICommandLineArgument" /> instance defined in this <see cref="IArgumentContainer" />.</returns>
         ICommandLineArgument AddArgument(string name, string description, ArgumentType type, bool required = true, bool repeatable = false, Action<ICommandLineArgument> configure = null);
 
         #endregion

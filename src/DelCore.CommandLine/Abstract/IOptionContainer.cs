@@ -18,7 +18,7 @@ namespace DelCore.CommandLine.Abstract
         #region Properties
 
         /// <summary>
-        ///     Gets a <see cref="ICollection{T}" /> containing the options defined in the <see cref="IOptionContainer" />.
+        ///     Gets a <see cref="ICollection{T}" /> containing the options defined in this <see cref="IOptionContainer" />.
         /// </summary>
         /// <returns>A <see cref="ICollection{ICommandLineOption}" /> containing the options defined in the <see cref="IOptionContainer" />.</returns>
         ICollection<ICommandLineOption> Options { get; }
@@ -28,22 +28,22 @@ namespace DelCore.CommandLine.Abstract
         #region Methods
 
         /// <summary>
-        ///     Defines a new option in the <see cref="IOptionContainer"/>.
+        ///     Defines a new <see cref="ICommandLineOption" /> in the <see cref="IOptionContainer"/>.
         /// </summary>
         /// <remarks>For rules on how templates should be structured, please refer to the online documentation.</remarks>
-        /// <param name="template">A template string describing the option.</param>
-        /// <param name="configure">A callback used to configure the option before it is added to the <see cref="IOptionContainer"/>.</param>
+        /// <param name="template">A template string describing the <see cref="ICommandLineOption" />.</param>
+        /// <param name="configure">A callback used to configure the <see cref="ICommandLineOption" /> before it is added to this <see cref="IOptionContainer"/>.</param>
         /// <returns>The new <see cref="ICommandLineOption" /> instance defined in the <see cref="IOptionContainer" />.</returns>
         ICommandLineOption AddOption(string template, Action<ICommandLineOption> configure = null);
 
         /// <summary>
-        ///     Defines a new option in the <see cref="IOptionContainer"/>.
+        ///     Defines a new <see cref="ICommandLineOption" /> in this <see cref="IOptionContainer"/>.
         /// </summary>
         /// <remarks>For rules on how templates should be structured, please refer to the online documentation.</remarks>
-        /// <param name="template">A template string describing the option being defined.</param>
-        /// <param name="description">A description of the option being defined.</param>
-        /// <param name="configure">A callback used to configure the option before it is added to the <see cref="IOptionContainer"/>.</param>
-        /// <returns>The new <see cref="ICommandLineOption" /> instance defined in the <see cref="IOptionContainer" />.</returns>
+        /// <param name="template">A template string describing the <see cref="ICommandLineOption" /> being defined.</param>
+        /// <param name="description">A description of the <see cref="ICommandLineOption" /> being defined.</param>
+        /// <param name="configure">A callback used to configure the <see cref="ICommandLineOption" /> before it is added to this <see cref="IOptionContainer"/>.</param>
+        /// <returns>The new <see cref="ICommandLineOption" /> instance defined in this <see cref="IOptionContainer" />.</returns>
         ICommandLineOption AddOption(string template, string description, Action<ICommandLineOption> configure = null);
 
         #endregion
