@@ -28,12 +28,12 @@ namespace DelCore.CommandLine.Abstract
         #region Methods
 
         /// <summary>
-        ///     Defines a new <see cref="ICommandLineOption" /> in the <see cref="IOptionContainer"/>.
+        ///     Defines a new <see cref="ICommandLineOption" /> in this <see cref="IOptionContainer"/>.
         /// </summary>
         /// <remarks>For rules on how templates should be structured, please refer to the online documentation.</remarks>
         /// <param name="template">A template string describing the <see cref="ICommandLineOption" />.</param>
         /// <param name="configure">A callback used to configure the <see cref="ICommandLineOption" /> before it is added to this <see cref="IOptionContainer"/>.</param>
-        /// <returns>The new <see cref="ICommandLineOption" /> instance defined in the <see cref="IOptionContainer" />.</returns>
+        /// <returns>The new <see cref="ICommandLineOption" /> instance defined in this <see cref="IOptionContainer" />.</returns>
         ICommandLineOption AddOption(string template, Action<ICommandLineOption> configure = null);
 
         /// <summary>

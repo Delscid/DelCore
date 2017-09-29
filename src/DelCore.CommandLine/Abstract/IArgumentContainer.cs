@@ -34,7 +34,7 @@ namespace DelCore.CommandLine.Abstract
         /// <param name="type">The type of the <see cref="ICommandLineArgument" /> being defined.</param>
         /// <param name="required">A value indicating whether the <see cref="ICommandLineArgument" /> is required.</param>
         /// <param name="repeatable">A value indicating whether the <see cref="ICommandLineArgument" /> can be used multiple times.</param>
-        /// <param name="configure">A callback used to configure the <see cref="ICommandLineArgument" /> before it is added to the <see cref="IArgumentContainer"/>.</param>
+        /// <param name="configure">A callback used to configure the <see cref="ICommandLineArgument" /> before it is added to this <see cref="IArgumentContainer"/>.</param>
         /// <returns>The new <see cref="ICommandLineArgument" /> instance defined in this <see cref="IArgumentContainer" />.</returns>
         ICommandLineArgument AddArgument(string name, ArgumentType type, bool required = true, bool repeatable = false, Action<ICommandLineArgument> configure = null);
 
@@ -46,7 +46,7 @@ namespace DelCore.CommandLine.Abstract
         /// <param name="type">The type of the <see cref="ICommandLineArgument" /> being defined.</param>
         /// <param name="required">A value indicating whether the <see cref="ICommandLineArgument" /> is required.</param>
         /// <param name="repeatable">A value indicating whether the <see cref="ICommandLineArgument" /> can be used multiple times.</param>
-        /// <param name="configure">A callback used to configure the <see cref="ICommandLineArgument" /> before it is added to the <see cref="IArgumentContainer"/>.</param>
+        /// <param name="configure">A callback used to configure the <see cref="ICommandLineArgument" /> before it is added to this <see cref="IArgumentContainer"/>.</param>
         /// <returns>The new <see cref="ICommandLineArgument" /> instance defined in this <see cref="IArgumentContainer" />.</returns>
         ICommandLineArgument AddArgument(string name, string description, ArgumentType type, bool required = true, bool repeatable = false, Action<ICommandLineArgument> configure = null);
 

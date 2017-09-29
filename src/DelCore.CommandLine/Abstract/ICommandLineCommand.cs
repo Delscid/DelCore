@@ -30,7 +30,7 @@ namespace DelCore.CommandLine.Abstract
         /// <summary>
         ///     Gets the description of the command.
         /// </summary>
-        /// <value>the description of the command.</value>
+        /// <value>The description of the command.</value>
         string Description { get; }
 
         /// <summary>
@@ -44,21 +44,21 @@ namespace DelCore.CommandLine.Abstract
         #region Methods
 
         /// <summary>
-        ///     Sets the callback to be executed when the command is matched.
+        ///     Sets the callback to be executed when this <see cref="ICommandLineCommand"/> is matched.
         /// </summary>
-        /// <param name="entrypoint">The callback to be executed when the command is matched.</param>
+        /// <param name="entrypoint">The callback to be executed when this <see cref="ICommandLineCommand"/> is matched.</param>
         void SetEntryPoint(Action entrypoint);
 
         /// <summary>
-        ///     Sets the asynchronous callback to be executed when the command is matched.
+        ///     Sets the asynchronous callback to be executed when this <see cref="ICommandLineCommand"/> is matched.
         /// </summary>
-        /// <param name="entrypoint">The asynchronous callback to be executed when the command is matched.</param>
+        /// <param name="entrypoint">The asynchronous callback to be executed when this <see cref="ICommandLineCommand"/> is matched.</param>
         void SetEntryPoint(Func<Task> entrypoint);
 
         /// <summary>
-        ///     Executes the callback associated with the command using the provided <paramref name="arguments"/>.
+        ///     Executes the callback associated with this <see cref="ICommandLineCommand"/> using the provided <paramref name="arguments"/>.
         /// </summary>
-        /// <param name="arguments">The arguments to process and pass to the command.</param>
+        /// <param name="arguments">The arguments to process and pass to the callback.</param>
         void Execute(params string[] arguments);
 
         #endregion
