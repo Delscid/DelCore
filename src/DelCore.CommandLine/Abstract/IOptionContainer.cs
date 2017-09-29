@@ -40,7 +40,7 @@ namespace DelCore.CommandLine.Abstract
         ///     Defines a new option in the <see cref="IOptionContainer"/>.
         /// </summary>
         /// <remarks>For rules on how templates should be structured, please refer to the online documentation.</remarks>
-        /// <param name="template">A template string describing the option to define.</param>
+        /// <param name="template">A template string describing the option being defined.</param>
         /// <param name="description">A description of the option being defined.</param>
         /// <param name="configure">A callback used to configure the option before it is added to the <see cref="IOptionContainer"/>.</param>
         /// <returns>The new <see cref="ICommandLineOption" /> instance defined in the <see cref="IOptionContainer" />.</returns>

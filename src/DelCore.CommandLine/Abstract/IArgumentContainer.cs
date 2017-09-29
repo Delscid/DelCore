@@ -30,8 +30,8 @@ namespace DelCore.CommandLine.Abstract
         /// <summary>
         ///     Defines a new argument in the <see cref="IArgumentContainer" />.
         /// </summary>
-        /// <param name="name">The name of the argument to define.</param>
-        /// <param name="type">The type of the argument to define.</param>
+        /// <param name="name">The name of the argument being defined.</param>
+        /// <param name="type">The type of the argument being defined.</param>
         /// <param name="required">A value indicating whether the argument is required.</param>
         /// <param name="repeatable">A value indicating whether the argument can be used multiple times.</param>
         /// <param name="configure">A callback used to configure the argument before it is added to the <see cref="IArgumentContainer"/>.</param>
@@ -41,9 +41,9 @@ namespace DelCore.CommandLine.Abstract
         /// <summary>
         ///     Defines a new argument in the <see cref="IArgumentContainer" />.
         /// </summary>
-        /// <param name="name">The name of the argument to define.</param>
+        /// <param name="name">The name of the argument being defined.</param>
         /// <param name="description">A description of the argument being defined.</param>
-        /// <param name="type">The type of the argument to define.</param>
+        /// <param name="type">The type of the argument being defined.</param>
         /// <param name="required">A value indicating whether the argument is required.</param>
         /// <param name="repeatable">A value indicating whether the argument can be used multiple times.</param>
         /// <param name="configure">A callback used to configure the argument before it is added to the <see cref="IArgumentContainer"/>.</param>

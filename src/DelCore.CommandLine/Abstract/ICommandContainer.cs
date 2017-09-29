@@ -31,7 +31,7 @@ namespace DelCore.CommandLine.Abstract
         /// <summary>
         /// Defines a new command in the <see cref="ICommandContainer"/>.
         /// </summary>
-        /// <param name="name">The name of the command to define.</param>
+        /// <param name="name">The name of the command being defined.</param>
         /// <param name="entrypoint">The callback to be executed when the command is matched.</param>
         /// <param name="configure">A callback used to configure the command before it is added to the <see cref="ICommandContainer"/>.</param>
         /// <returns>The new <see cref="ICommandLineCommand" /> instance defined in the <see cref="ICommandContainer" />.</returns>
@@ -40,7 +40,7 @@ namespace DelCore.CommandLine.Abstract
         /// <summary>
         ///     Defines a new command for the entity.
         /// </summary>
-        /// <param name="name">The name of the command to define.</param>
+        /// <param name="name">The name of the command being defined.</param>
         /// <param name="entrypoint">The asynchronous callback to be executed when the command is matched.</param>
         /// <param name="configure">A callback used to configure the command before it is added to the <see cref="ICommandContainer"/>.</param>
         /// <returns>The new <see cref="ICommandLineCommand" /> instance defined in the <see cref="ICommandContainer" />.</returns>
@@ -49,8 +49,8 @@ namespace DelCore.CommandLine.Abstract
         /// <summary>
         ///     Defines a new command for the entity.
         /// </summary>
-        /// <param name="name">The name of the command to define.</param>
-        /// <param name="description">A description of the command to define.</param>
+        /// <param name="name">The name of the command being defined.</param>
+        /// <param name="description">A description of the command being defined.</param>
         /// <param name="entrypoint">The callback to be executed when the command is matched.</param>
         /// <param name="configure">A callback used to configure the command before it is added to the <see cref="ICommandContainer"/>.</param>
         /// <returns>The new <see cref="ICommandLineCommand" /> instance defined in the <see cref="ICommandContainer" />.</returns>
@@ -59,8 +59,8 @@ namespace DelCore.CommandLine.Abstract
         /// <summary>
         ///     Defines a new command for the entity.
         /// </summary>
-        /// <param name="name">The name of the command to define.</param>
-        /// <param name="description">A description of the command to define.</param>
+        /// <param name="name">The name of the command being defined.</param>
+        /// <param name="description">A description of the command being defined.</param>
         /// <param name="entrypoint">The asynchronous callback to be executed when the command is matched.</param>
         /// <param name="configure">A callback used to configure the command before it is added to the <see cref="ICommandContainer"/>.</param>
         /// <returns>The new <see cref="ICommandLineCommand" /> instance defined in the <see cref="ICommandContainer" />.</returns>
