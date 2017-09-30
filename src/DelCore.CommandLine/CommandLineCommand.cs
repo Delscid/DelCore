@@ -10,7 +10,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 
 using DelCore.CommandLine.Abstract;
-using DelCore.CommandLine.Internal;
+using DelCore.Linq;
 
 namespace DelCore.CommandLine
 {

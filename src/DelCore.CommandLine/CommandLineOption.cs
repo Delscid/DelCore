@@ -9,8 +9,8 @@ using System;
 using System.Collections.Generic;
 
 using DelCore.CommandLine.Abstract;
-using DelCore.CommandLine.Internal;
 using DelCore.CommandLine.Parsing;
+using DelCore.Linq;
 
 namespace DelCore.CommandLine
 {

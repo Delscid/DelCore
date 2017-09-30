@@ -11,9 +11,9 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace DelCore.CommandLine.Internal
+namespace DelCore.Linq
 {
-    internal static class EnumerableExtensions
+    public static class EnumerableExtensions
     {
         #region Methods
 

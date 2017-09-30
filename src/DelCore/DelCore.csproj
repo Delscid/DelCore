@@ -18,9 +18,5 @@
   <PropertyGroup Condition="'$(TargetFramework)' == 'net46'">
     <DefineConstants>SERIALIZABLE</DefineConstants>
   </PropertyGroup>
-  
-  <ItemGroup>
-    <ProjectReference Include="..\DelCore\DelCore.csproj" />
-  </ItemGroup>
 </Project>
   
